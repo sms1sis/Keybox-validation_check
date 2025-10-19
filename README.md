@@ -21,20 +21,37 @@ This tool verifies whether the **EC and RSA certificates** inside your keybox ha
 
 Make sure you have Python 3.8+ installed, then install the required dependency:
 
-```bash
+```sh
 pip install cryptography requests
 ```
 ## On termux use
 
-```bash
+```sh
 pkg install python-cryptography
 pip install requests
 ```
 ## 🚀 Usage
 
-```bash
+```sh
 python3 keybox_check.py /path-to-keybox.xml
+```
+## Example output:
+
+```
+🔍 Checking Android Keybox Status...
+→ Fetching revocation list from Google...
+✔ Revocation list loaded successfully.
+→ Parsing XML file: keybox.xml
+
+Certificate Serial Numbers:
+  🔹 EC  Cert SN: 7a8b9c3f2d1e4a...
+    🔹 RSA Cert SN: 2d4f8a9c7b1e3...
+
+    ✅ Keybox is STILL VALID!
+
+    ----------------------------------------
+    Check completed successfully.
 ```
 
 ## 🙌 Credit
-Original concept and initial version by [hldr4](https://gist.github.com/hldr4/b933f584b2e2c3088bcd56eb056587f8)
+- [hldr4](https://gist.github.com/hldr4/b933f584b2e2c3088bcd56eb056587f8) for original concept and initial version
