@@ -24,12 +24,14 @@ Make sure you have Python 3.8+ installed, then install the required dependency:
 ```sh
 pip install cryptography requests
 ```
-## On termux use
+## On termux
 
 ```sh
 pkg install python-cryptography
 pip install requests
 ```
+---
+
 ## 🚀 Usage
 
 ```sh
