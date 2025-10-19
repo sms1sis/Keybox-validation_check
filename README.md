@@ -23,3 +23,10 @@ Make sure you have Python 3.8+ installed, then install the required dependency:
 
 ```bash
 pip install cryptography requests
+```
+## On termux use
+
+```bash
+pkg install python-cryptography
+pip install requests
+```
