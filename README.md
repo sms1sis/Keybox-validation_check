@@ -35,6 +35,8 @@ pip install requests
 ```sh
 python3 keybox_check.py /path-to-keybox.xml
 ```
+---
+
 ## 🖥️ Example Output
 
 ```
@@ -52,6 +54,8 @@ python3 keybox_check.py /path-to-keybox.xml
 ----------------------------------------
 Check completed successfully.
 ```
+
+---
 
 ## 🙌 Credit
 - [hldr4](https://gist.github.com/hldr4/b933f584b2e2c3088bcd56eb056587f8) for original concept and initial version
