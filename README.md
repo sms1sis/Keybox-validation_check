@@ -38,19 +38,19 @@ python3 keybox_check.py /path-to-keybox.xml
 ## Example output:
 
 ```
-\033[96m\033[1m🔍 Checking Android Keybox Status...\033[0m
-\033[93m→ Fetching revocation list from Google...\033[0m
-\033[92m✔ Revocation list loaded successfully.\033[0m
-\033[93m→ Parsing XML file: keybox.xml\033[0m
+**🔍 Checking Android Keybox Status...**
+➡️ Fetching revocation list from Google...
+✔️ Revocation list loaded successfully.
+➡️ Parsing XML file: keybox.xml
 
-\033[1mCertificate Serial Numbers:\033[0m
-  🔹 EC  Cert SN: \033[96m7a8b9c3f2d1e4a...\033[0m
-  🔹 RSA Cert SN: \033[96m2d4f8a9c7b1e3...\033[0m
+**Certificate Serial Numbers:**
+  🔹 EC  Cert SN: `7a8b9c3f2d1e4a...`
+  🔹 RSA Cert SN: `2d4f8a9c7b1e3...`
 
-\033[92m\033[1m✅ Keybox is STILL VALID!\033[0m
+✅ **Keybox is STILL VALID!**
 
-\033[96m----------------------------------------\033[0m
-\033[96mCheck completed successfully.\033[0m
+----------------------------------------
+Check completed successfully.
 ```
 
 ## 🙌 Credit
