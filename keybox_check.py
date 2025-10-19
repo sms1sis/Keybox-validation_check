@@ -61,16 +61,13 @@ def main():
     print(f"  🔹 RSA Cert SN: {CYAN}{rsa_cert_sn}{RESET}")
 
     # Check revocation
-    revoked_serials = crl.get("entries", {{}})
+    revoked_serials = crl.get("entries", {})
     is_ec_revoked = ec_cert_sn in revoked_serials
     is_rsa_revoked = rsa_cert_sn in revoked_serials
 
     if is_ec_revoked or is_rsa_revoked:
         print(f"\n{RED}{BOLD}❌ Keybox is REVOKED!{RESET}")
-        if is_ec_revoked:
-            print(f"{RED}  - EC certificate ({ec_cert_sn}) is revoked.{RESET}")
-        if is_rsa_revoked:
-            print(f"{RED}  - RSA certificate ({rsa_cert_sn}) is revoked.{RESET}")
+
     else:
         print(f"\n{GREEN}{BOLD}✅ Keybox is STILL VALID!{RESET}")
 
