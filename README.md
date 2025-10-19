@@ -35,7 +35,7 @@ pip install requests
 ```sh
 python3 keybox_check.py /path-to-keybox.xml
 ```
-## Example output:
+## 🖥️ Example Output
 
 ```
 **🔍 Checking Android Keybox Status...**
