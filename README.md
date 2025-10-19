@@ -19,16 +19,17 @@ This tool verifies whether the **EC and RSA certificates** inside your keybox ha
 
 ## 📦 Requirements
 
-Make sure you have Python 3.8+ installed, then install the required dependency:
+Make sure you have Python 3.8+ installed, then install the required dependencies:
 
 ```sh
-pip install cryptography requests
+pip install -r requirements.txt
 ```
+
 ## On termux
 
 ```sh
-pkg install python-cryptography
-pip install requests
+pkg install python
+pip install -r requirements.txt
 ```
 ---
 
