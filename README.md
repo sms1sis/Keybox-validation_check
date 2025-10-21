@@ -48,6 +48,9 @@ python3 keybox_check.py /path-to-keybox.xml
 
 ```
 🔍 Checking Android Keybox Status...
+
+----------------------------------------
+
 → Fetching revocation list from Google...
 ✔ Revocation list loaded successfully.
 → Parsing XML file: /path/to/your/keybox.xml
@@ -59,6 +62,7 @@ Certificate Serial Numbers:
 ❌ Keybox is REVOKED!
 
 ----------------------------------------
+
 Check completed successfully.
 ```
 
