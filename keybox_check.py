@@ -28,7 +28,8 @@ def main():
     args = parser.parse_args()
 
     print(f"{CYAN}{BOLD}\n🔍 Checking Android Keybox Status...{RESET}")
-
+    print(f"\n{CYAN}----------------------------------------{RESET}")
+    print()
     # Fetch CRL data
     try:
         print(f"{YELLOW}→ Fetching revocation list from Google...{RESET}")
@@ -72,6 +73,7 @@ def main():
         print(f"\n{GREEN}{BOLD}✅ Keybox is STILL VALID!{RESET}")
 
     print(f"\n{CYAN}----------------------------------------{RESET}")
+    print()
     print(f"{CYAN}Check completed successfully.{RESET}\n")
 
 if __name__ == "__main__":
